@@ -123,6 +123,7 @@ int main( int argc, char* argv[] )
   // Timer products.
   struct timeval begin, end;
 
+  Kokkos::fence();
   gettimeofday( &begin, NULL );
 
   for ( int repeat = 0; repeat < nrepeat; repeat++ ) {
