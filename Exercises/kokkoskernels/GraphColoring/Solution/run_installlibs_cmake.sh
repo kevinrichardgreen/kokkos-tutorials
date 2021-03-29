@@ -14,7 +14,7 @@ CUDA_OPTIONS=
 
 if [[ "${KOKKOS_DEVICES}" == *Cuda* ]]; then
   CXX=${KOKKOS_PATH}/bin/nvcc_wrapper
-  KOKKOS_ARCH="BDW,Volta70"
+  KOKKOS_ARCH="BDW,Kepler35"
   CUDA_OPTIONS="enable_lambda"
 else
   KOKKOS_ARCH="BDW"

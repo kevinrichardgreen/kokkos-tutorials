@@ -8,7 +8,7 @@ KOKKOS_PATH = ${HOME}/Kokkos/kokkos
 #Set the Devices to compile for
 KOKKOS_DEVICES=OpenMP
 #Set the Architecture to compiler for
-KOKKOS_ARCH=SNB,Volta70
+KOKKOS_ARCH=SNB,Kepler35
 #Set third party library usage
 KOKKOS_USE_TPL=
 CXXFLAGS = -O3 -g 

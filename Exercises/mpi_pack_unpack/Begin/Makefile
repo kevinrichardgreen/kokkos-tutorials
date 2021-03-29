@@ -11,7 +11,7 @@ CXX = mpicxx
 
 ifneq (,$(findstring Cuda,$(KOKKOS_DEVICES)))
 EXE = ${EXE_NAME}.cuda
-KOKKOS_ARCH = "Volta70"
+KOKKOS_ARCH = "Kepler35"
 KOKKOS_CUDA_OPTIONS = "enable_lambda,rdc"
 else
 EXE = ${EXE_NAME}.host
